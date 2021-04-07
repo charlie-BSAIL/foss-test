@@ -1,19 +1,14 @@
 # foss-test
-add a line on LaTex.
-    1  ls
-    2  cd /scratch
-    3  ls
-    4  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    5  bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda
-    6  python
-    7  ln -s /opt/conda/pkgs/*/bin/* /bin
-    8  ln -s /opt/conda/pkgs/*/lib/* /usr/lib
-    9  ln -s /opt/conda/pkgs/*/lib/* /usr/lib
-   10  python
-   11  python 3
-   12  python3
-   13  ls /opt/conda/pkgs/python-3.8.5-h7579374_1
-   14  ls /opt/conda/pkgs/python-3.8.5-h7579374_1/bin/python3
+
+## install conda: 
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda
+
+## link path
+ln -s /opt/conda/pkgs/*/bin/* /bin
+ln -s /opt/conda/pkgs/*/lib/* /usr/lib
+ln -s /opt/conda/pkgs/*/lib/* /usr/lib
+
    15  conda search ptyhon
    16  conda search python
    17  /opt/conda/bin/conda install -c conda-forge -y jupyterlab=1.2.3
@@ -25,8 +20,10 @@ add a line on LaTex.
    23  /opt/conda/bin/python3 -m bash_kernel.install
    24  /opt/conda/bin/conda install -y ipykernel
    25  /opt/conda/bin/conda search -c bioconda fastx
-   26  /opt/conda/bin/jupyter lab --no-browser --allow-root --ip=0.0.0.0 --NotebookApp.token='' --NotebookApp.password='' --notebook-dir='/scratch/reproducibility-tutorial/'
+
+
    27  /opt/conda/bin/jupyter lab --no-browser --allow-root --ip=0.0.0.0 --NotebookApp.token='' --NotebookApp.password='' --notebook-dir='/scratch/reproducibility-tutorial/'
+   
    28  ls
    29  mkdir reproducibility
    30  ls
